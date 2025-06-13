@@ -1,3 +1,10 @@
+## 1.0.0 (2025-06-13)
+
+
+
+### Bug Fixes
+* fix ([`41ebc16`](https://github.com/moorec-aws/deadline-cloud-for-after-effects/commit/41ebc16d4db7068303cea56b9cad6bd21eab05d5))
+
 ## 0.2.5 (2025-06-04)
 
 
