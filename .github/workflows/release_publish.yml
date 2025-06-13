@@ -22,14 +22,14 @@ permissions:
 
 jobs:
   TagRelease:
-    uses: aws-deadline/.github/.github/workflows/reusable_tag_release.yml@mainline
+    uses: moorec-aws/.github/.github/workflows/reusable_tag_release.yml@mainline
     secrets: inherit
     with:
       tag: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || '' }}
 
   BuildAndStageInstallers:
     needs: TagRelease
-    uses: aws-deadline/.github/.github/workflows/reusable_build_and_stage_installers.yml@mainline
+    uses: moorec-aws/.github/.github/workflows/reusable_build_and_stage_installers.yml@mainline
     secrets: inherit
     permissions:
       id-token: write
